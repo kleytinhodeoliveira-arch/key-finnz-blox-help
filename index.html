@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Key_Finnz Blox - Ajuda a Farmar</title>
+    <style>
+        :root {
+            --bg-dark: #0f172a;
+            --card-bg: #1e293b;
+            --accent: #00f2fe;
+            --accent-green: #22c55e;
+            --text-light: #f8fafc;
+            --warning-bg: #451a03;
+            --warning-border: #f59e0b;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            background: linear-gradient(135deg, #1e1b4b, #311b92);
+            text-align: center;
+            padding: 25px 15px;
+            border-bottom: 3px solid var(--accent);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 1.8rem;
+            color: var(--accent);
+        }
+
+        header p {
+            margin-top: 5px;
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 15px;
+        }
+
+        .notice-card {
+            background-color: var(--warning-bg);
+            border: 2px solid var(--warning-border);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        .notice-card h3 {
+            color: var(--warning-border);
+            margin-top: 0;
+        }
+
+        .info-box {
+            background-color: var(--card-bg);
+            border-radius: 10px;
+            padding: 15px;
+            margin-bottom: 20px;
+            border: 1px solid #334155;
+        }
+
+        .info-box h2 {
+            font-size: 1.2rem;
+            color: var(--accent);
+            margin-top: 0;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        input {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 6px;
+            border: 1px solid #475569;
+            background-color: #0f172a;
+            color: white;
+            box-sizing: border-box;
+        }
+
+        button {
+            width: 100%;
+            background-color: var(--accent-green);
+            color: white;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 1rem;
+            margin-top: 15px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            opacity: 0.9;
+        }
+
+        .result-box {
+            margin-top: 15px;
+            padding: 10px;
+            background-color: #0284c7;
+            border-radius: 6px;
+            text-align: center;
+            display: none;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+            gap: 15px;
+            margin-top: 10px;
+        }
+
+        .card {
+            background-color: #0f172a;
+            border: 1px solid #334155;
+            border-radius: 8px;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .card img {
+            width: 80px;
+            height: 80px;
+            object-fit: contain;
+        }
+
+        .card h4 {
+            margin: 8px 0 0 0;
+            font-size: 0.95rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            font-size: 0.8rem;
+            opacity: 0.7;
+            border-top: 1px solid #334155;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Key_Finnz Blox</h1>
+        <p>Ajuda Profissional de Farm no Blox Fruits</p>
+        <p><strong>Meu ID Roblox:</strong> <span style="color: var(--accent);">TammieMiles296</span></p>
+    </header>
+
+    <div class="container">
+
+        <!-- AVISO IMPORTANTE -->
+        <div class="notice-card">
+            <h3>⚠️ AVISO IMPORTANTE</h3>
+            <p><strong>NÃO</strong> doamos e <strong>NÃO</strong> enviamos Frutas, Gamepasses ou Robux grátis!</p>
+            <p>Nosso serviço é focado exclusivamente em <strong>ajudar você a subir de level (farmar)</strong> no jogo.</p>
+        </div>
+
+        <!-- HORÁRIO DE ATENDIMENTO -->
+        <div class="info-box">
+            <h2>🕒 Horário de Atendimento</h2>
+            <p>Atendemos nos seguintes dias e horários:</p>
+            <ul>
+                <li><strong>Segunda-feira:</strong> 17:00 às 19:25</li>
+                <li><strong>Terça-feira:</strong> 17:00 às 19:25</li>
+                <li><strong>Quarta-feira:</strong> 17:00 às 19:25</li>
+            </ul>
+        </div>
+
+        <!-- CALCULADORA DE SEA E AJUDA -->
+        <div class="info-box">
+            <h2>🎮 Solicitar Ajuda para Farmar</h2>
+            
+            <label for="robloxId">Seu ID ou Usuário do Roblox:</label>
+            <input type="text" id="robloxId" placeholder="Ex: MeuNick123">
+
+            <label for="userLevel">Seu Level Atual no Blox Fruits:</label>
+            <input type="number" id="userLevel" placeholder="Ex: 700" min="1" max="2550">
+
+            <label for="userFruit">Sua Fruta Atual:</label>
+            <input type="text" id="userFruit" placeholder="Ex: Buddha, Dough, Light...">
+
+            <button onclick="calcularEEnviar()">Calcular Sea & Pedir Ajuda no WhatsApp</button>
+
+            <div id="resultado" class="result-box"></div>
+        </div>
+
+        <!-- GALERIA DE FRUTAS -->
+        <div class="info-box">
+            <h2>🍎 Frutas do Blox Fruits</h2>
+            <div class="grid-container">
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41-S+J3j6AL.png" alt="Kitsune">
+                    <h4>Kitsune</h4>
+                </div>
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41-S+J3j6AL.png" alt="Dragon">
+                    <h4>Dragon</h4>
+                </div>
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41-S+J3j6AL.png" alt="Dough">
+                    <h4>Dough</h4>
+                </div>
+                <div class="card">
+                    <img src="https://m.media-amazon.com/images/I/41-S+J3j6AL.png" alt="Buddha">
+                    <h4>Buddha</h4>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Key_Finnz Blox - Desenvolvido para auxílio de jogadores.</p>
+    </footer>
+
+    <script>
+        function calcularEEnviar() {
+            const id = document.getElementById('robloxId').value;
+            const level = parseInt(document.getElementById('userLevel').value);
+            const fruta = document.getElementById('userFruit').value;
+            const resDiv = document.getElementById('resultado');
+
+            if (!id || !level || !fruta) {
+                alert("Por favor, preencha todos os campos!");
+                return;
+            }
+
+            let sea = "";
+            if (level >= 1 && level <= 699) {
+                sea = "First Sea (Sea 1)";
+            } else if (level >= 700 && level <= 1499) {
+                sea = "Second Sea (Sea 2)";
+            } else if (level >= 1500) {
+                sea = "Third Sea (Sea 3)";
+            } else {
+                sea = "Level Inválido";
+            }
+
+            resDiv.style.display = "block";
+            resDiv.innerHTML = `<p><strong>Seu Sea Ideal:</strong> ${sea}</p>`;
+
+            // Link do WhatsApp com mensagem formatada
+            const msg = `Olá! Quero ajuda para farmar.%0A*ID Roblox:* ${id}%0A*Level:* ${level}%0A*Fruta:* ${fruta}%0A*Sea Estimado:* ${sea}`;
+            const urlWa = `https://wa.me/553298129276?text=${msg}`;
+
+            setTimeout(() => {
+                window.open(urlWa, '_blank');
+            }, 1000);
+        }
+    </script>
+</body>
+                      </html>
+                      
